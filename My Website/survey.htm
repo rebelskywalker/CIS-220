@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="UTF-8"></meta>
+	<meta charset="description" content="A page to advertise Ruby's Diner and Streamliner Lounge">
+	<title>Ruby's and The Streamliner Lounge </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"> </meta>
+<link href="main.css" rel="stylesheet" form="text/css"> </link>
+<link href="survey.css" rel="stylesheet" form="text/css"> </link>
+<style>
+a:hover { 
+                 background:darkred;
+                 padding-bottom:15px;
+                 padding-top:15px;
+                 padding-left:15px;
+                 padding-right:15px;                               
+                 }
+    
+</style>
+</head>
+
+<body>
+      <header> <img class="sllogo" src="lounge5.jpg" alt="Streamliner Lounge logo">
+         </header>
+         <nav>
+	<ul>
+		<li><a href="index.htm">Index</a><li>
+		<li><a href="menu.htm">Menu</a><li>
+        <li><a href="orange.htm">Orange</a><li>
+		<li><a href="calendar.htm">Calendar</a><li>
+		<li><a href="survey.htm">Surveys</a><li>
+	</ul>
+    </nav>
+    
+<h1 style="text-shadow: 3px 3px darkred;"> Survey </h1>
+    
+
+      <p>Required values are marked by an asterisk (*)</p>
+	<form id="survey" name="survey"
+		action="http://www.thestreamlinerlounge.com/cgi-bin/survey"
+		method="post">
+
+		<fieldset id="custInfo">
+			<legend>Customer Information</legend>
+				
+				<label for="custname">Name *</label>
+				 <input name="custname" id="custname" required="required"
+				         placeholder="first and last name" />
+
+				<label for="street">Street address</label>
+				 <input name="street" id="street" />
+
+				<label for="city">City</label>
+				 <input name="city" id="city" value="Orange" />
+
+				<label for="state">State (abbr.)</label>
+				 <input name="state" id="state" value="CA" />
+
+				<label for="zip">Postal code</label>
+				 <input name="zip" id="zip"
+				         placeholder="nnnnn (-nnnn)" 
+					 pattern="^\d{5}(\-\d{4})?$" />
+
+				<label for="phone">Phone number</label>
+
+            <input name="phone" id="phone" type="tel"
+                                         placeholder="(nnn) nnn-nnnn"
+					 pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+		
+				<label for="email">E-mail *</label>
+				 <input name="email" id="email" required="required" type="email" />
+				
+				<label>Where did you hear about us? <br/> (Select all that apply)</label>
+				<select name="infoSrc" id="infoSrc" size="5" multiple="multiple">
+					<option value="internet">Internet</option>
+					<option value="mag">Magazine</option>
+					<option value="news">Newspaper</option>
+					<option value="word">Word of Mouth</option>
+					<option value="other">Other</option>
+				</select>
+				
+			
+
+				<label for="favDish">What's your favorite Streamliner/Ruby's Dish?</label>
+				<input name="favDish" id="favDish" list="dishType" />
+				<datalist id="dishType">
+					<option value="APB Chicken Salad" />		
+					<option value="BBQ Chicken Melt" />	
+					<option value="Hickory Burger" />		
+					<option value="Mediterranean Chicken Salad" />		
+					<option value="Ranch Burger" />		
+					<option value="Sriracha BBQ Wings" />		
+					<option value="Sriracha Burger" />		
+					<option value="Super Burger" />	
+				</datalist>	
+	
+
+		</fieldset>
+
+		<fieldset id="experience">
+			<legend>Tell Us About Us</legend>
+			
+				<label for="visitdate">Date of visit</label>
+				 <input name="visitdate" id="visitdate" type="date" />
+
+				<label for="receipt">Receipt number *</label>
+				 <input name="receipt" id="receipt" required="required"
+				         placeholder="re-nnnnnn" 
+					 pattern="^re\-\d{6}$"  />
+				
+				<label for="ordertype">Order type</label>
+				<select name="ordertype" id="ordertype">
+					<option value="type1">Carry out</option>
+					<option value="type2">Special Event</option>
+					<option value="type3" selected="selected">Dine in</option> 
+					
+				</select>
+            
+				<label>Was your service friendly?</label>
+				<fieldset class="optionGroup">
+					<label for="sYes">Yes</label>
+					<input type="radio" name="serviceFriendly" id="sYes" value="yes" /> 
+					
+					<label for="sNo">No</label>
+					<input type="radio" name="serviceFriendly" id="sNo" value="no" />
+
+		</fieldset>
+				<label>Was your order correct?</label>
+				<fieldset class="optionGroup">
+					<label for="oYes">Yes</label>
+					<input type="radio" name="orderCorrect" id="oYes" value="yes" />
+				
+					<label for="oNo">No</label>
+					<input type="radio" name="orderCorrect" id="oNo" vaulue="no" />
+		</fieldset>
+            
+            <label>Did a manager stop by your table?</label>
+				<fieldset class="optionGroup">
+					<label for="mYes">Yes</label>
+					<input type="radio" name="orderCorrect" id="mYes" value="yes" />
+				
+					<label for="mNo">No</label>
+					<input type="radio" name="orderCorrect" id="mNo" vaulue="no" />
+		</fieldset>
+				
+				<label>Was your food hot?</label>
+				<fieldset class="optionGroup">
+					<label for="hotYes">Yes</label>
+					<input type="radio" name="foodHot" id="hotYes" value="yes" />
+
+					<label for="hotNo">No</label>
+					<input type="radio" name="foodHot" id="hotNo" value="no" />
+		</fieldset>
+            
+            <label> Please rate your overall service </br>(1 Poor - 10 Best)</label>
+                    <label class="sliderLabel">0</label>
+           <label class="sliderLabel1">10</label>
+        <input name="service" style="width: 30%" type="range" name="slider" value="5" min="0" max="10" step="1">
+        
+ 
+ 
+    <label for="comments">Tell us more about your experience!</label>
+
+				
+	
+
+
+				
+				<textarea name="comments" id="comments"></textarea>
+		</fieldset>
+
+				<label id="newsletter">
+					<input type="checkbox" name="newscb" />
+					E-mail me your newsletter for great coupons and specials!
+				</label>
+
+				<p>
+					<input type="submit" value="Submit" />
+					<input type="reset" value="Cancel" />
+				</p>
+    
+	</form>
+   
+
+<aside> <img src="thanks.jpg" alt="thank you image"> </aside>
+ 
+
+   </body>
+   </html>

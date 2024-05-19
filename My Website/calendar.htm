@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      New Perspectives on HTML, CSS, and JavaScript
+      Tutorial 12
+      Tutorial Case
+
+      July at the Chamberlain Civic Center
+      Author: Chris Baker
+      Date:   11/30/15
+
+      Filename:         ccc.htm
+      Supporting files: back.jpg, back2.png, back3.png, calendar.css,
+                        calendar.js, ccc.css, ccc.png, events.js,
+                        modernizr-15.js, tab.jpg, tabred.jpg
+   -->
+
+      <meta charset="UTF-8"></meta>
+	<meta charset="description" content="A page to advertise Ruby's Diner and Streamliner Lounge">
+	<title>Ruby's and The Streamliner Lounge </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"> </meta>
+     
+
+      <link href="ccc.css" rel="stylesheet" type="text/css" />
+      
+      <link href="calendar.css" rel="stylesheet" type="text/css" />
+      <script src="events.js" type="text/javascript"></script>
+      <script src="calendar.js" type="text/javascript"></script>
+
+	
+   </head>
+
+   <body>
+      <section id="main">
+         <header>
+           <img class="sllogo" src="lounge5.jpg" alt="Streamliner Lounge logo">
+         </header>
+
+         <nav class="horizontal">
+	<ul>
+		<li><a href="index.htm">Index</a><li>
+		<li><a href="menu.htm">Menu</a><li>
+        <li><a href="orange.htm">Orange</a><li>
+		<li><a href="calendar.htm">Calendar</a><li>
+		<li><a href="survey.htm">Surveys</a><li>
+	</ul>
+    </nav>
+
+         <article id="summary">
+            <h1>Check out our events below</h1>
+            
+    
+
+            <figure id="events">
+		<script type="text/javascript">
+		   calendar(Date());
+		</script>
+            </figure>
+
+           
+        
+         </article>
+           <img src="burgerday.jpg" alt="burger day flyer"> 
+<p>Expect a big crowd at Rubys all over California as this semi-annual burger day occurs. Prepare to join many others as they get in line for this $1.99 special! For more information, click here <a href="http://www.rubys.com/promotions/3.html">For Ruby's</a>, 
+               to go straight to the Ruby's corporate website to check out our company.
+            </p>
+   <footer>
+      <address>
+         186 &bull;
+         North Atchison &bull;
+         Orange &bull;
+          California, 92866
+          
+      </address>
+   </footer>
+
+      </section>
+
+   </body>
+
+</html>

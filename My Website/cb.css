@@ -1,0 +1,108 @@
+/*
+ 
+
+   Style Sheet
+   Author: Chris Baker
+   Date:  10/18/2015
+
+   Filename:         
+   Supporting Files: 
+
+*/
+
+body {
+	text-align: center;
+	background: beige;
+	color: blue;
+	font-size: 20px;
+     }
+
+h1 {
+    background: lightblue;
+    padding-top: 0;
+    margin: 0;
+    border: solid green;
+    
+}
+
+header {
+   width: 95%;
+   text-align: center;
+    padding: %;
+    
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header nav ul li {
+   display: inline-block;
+   float: left;
+   width: 25%;
+   font-size: 24px;
+    background: lightgreen;
+    border-radius: 10px;
+    
+    
+	      }
+
+header nav ul li a {
+    display: inline-block;
+   border: 3px solid blue;
+   width: 98%;
+   text-decoration: none;
+    border-radius: 10px;
+   
+	      }
+h2 {
+    margin:5%;
+}
+
+
+
+
+/* MultiMedia Controls */
+
+
+audio {
+    background-color: white;
+    display: block;
+    margin: 5px auto;
+    width: 95%;
+    text-align: center;
+}
+
+article img {
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    
+     box-shadow: rgb(100, 100, 250) 5px 10px;
+    -moz-box-shadow: rgba(100, 100, 250) 5px 10px;
+    -webkit-box-shadow: rgba(100, 100, 250) 5px 10px;
+    box-shadow: rgba(100, 100, 250) 5px 10px;
+}
+
+
+/* Style rule to add a dark green vertical gradient to the background of the article element */
+
+article {
+	background: -o-linear-gradient(grey, rgb(51, 150, 51) 20%, white 80%);
+	background: -ms-linear-gradient(grey, rgb(51, 150, 51) 20%, white 80%);
+	background: -moz-linear-gradient(grey, rgb(51, 150, 51) 20%, white 80%);
+	background: -webkit-linear-gradient(grey, rgb(51, 150, 51) 20%, white 80%);
+	background: linear-gradient(grey, rgb(51, 150, 51) 20%, white 80%);
+}
+
+audio {
+    background-color: beige;
+}
+
+img {
+    border-radius: 30px;
+    box-shadow: 3px -3px 3px green;
+}
